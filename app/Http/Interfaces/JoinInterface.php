@@ -1,7 +1,9 @@
-<?php 
+<?php
 namespace App\Http\Interfaces;
 
-class JoinInterface
+use Illuminate\Http\Request;
+
+interface JoinInterface
 {
-	
+    public function store(Request $request);
 }
