@@ -13,7 +13,11 @@ class JoinController extends Controller
     {
         // Put form validation
 
-        $authRepository = new JoinRepository(new JoinByEmail());
+        $authRepository = new JoinRepository(new JoinByFacebook());
+        	// use for facebook sign up
+
+        // $authRepository = new JoinRepository(new JoinByEmail());
+        	// use for join by email
 
         $authRepository->store($request);
 
